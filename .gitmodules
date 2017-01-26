@@ -1,0 +1,52 @@
+[submodule "src/github.com/tscolari/plag"]
+	path = src/github.com/tscolari/plag
+	url = https://github.com/tscolari/plag
+	branch = master
+[submodule "src/code.cloudfoundry.org/lager"]
+	path = src/code.cloudfoundry.org/lager
+	url = https://github.com/cloudfoundry/lager
+	branch = master
+[submodule "src/gopkg.in/yaml.v2"]
+	path = src/gopkg.in/yaml.v2
+	url = https://gopkg.in/yaml.v2
+	branch = v2
+[submodule "src/github.com/nsf/termbox-go"]
+	path = src/github.com/nsf/termbox-go
+	url = https://github.com/nsf/termbox-go
+	branch = master
+[submodule "src/github.com/urfave/cli"]
+	path = src/github.com/urfave/cli
+	url = https://github.com/urfave/cli
+	branch = master
+[submodule "src/github.com/zorkian/go-datadog-api"]
+	path = src/github.com/zorkian/go-datadog-api
+	url = https://github.com/zorkian/go-datadog-api
+	branch = master
+[submodule "src/github.com/cloudflare/golibs"]
+	path = src/github.com/cloudflare/golibs
+	url = https://github.com/cloudflare/golibs
+	branch = master
+[submodule "src/github.com/gizak/termui"]
+	path = src/github.com/gizak/termui
+	url = https://github.com/gizak/termui
+	branch = master
+[submodule "src/github.com/maruel/panicparse"]
+	path = src/github.com/maruel/panicparse
+	url = https://github.com/maruel/panicparse
+	branch = master
+[submodule "src/github.com/mattn/go-runewidth"]
+	path = src/github.com/mattn/go-runewidth
+	url = https://github.com/mattn/go-runewidth
+	branch = master
+[submodule "src/github.com/mitchellh/go-wordwrap"]
+	path = src/github.com/mitchellh/go-wordwrap
+	url = https://github.com/mitchellh/go-wordwrap
+	branch = master
+[submodule "src/github.com/onsi/ginkgo"]
+	path = src/github.com/onsi/ginkgo
+	url = https://github.com/onsi/ginkgo
+	branch = master
+[submodule "src/github.com/onsi/gomega"]
+	path = src/github.com/onsi/gomega
+	url = https://github.com/onsi/gomega
+	branch = master
