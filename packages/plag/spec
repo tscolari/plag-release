@@ -1,0 +1,21 @@
+---
+name: plag
+
+dependencies:
+- golang
+
+files:
+  - code.cloudfoundry.org/lager/*.go # gosub
+  - code.cloudfoundry.org/lager/chug/*.go # gosub
+  - github.com/cloudflare/golibs/ewma/*.go # gosub
+  - github.com/gizak/termui/*.go # gosub
+  - github.com/maruel/panicparse/stack/*.go # gosub
+  - github.com/mattn/go-runewidth/*.go # gosub
+  - github.com/mitchellh/go-wordwrap/*.go # gosub
+  - github.com/nsf/termbox-go/*.go # gosub
+  - github.com/tscolari/plag/*.go # gosub
+  - github.com/tscolari/plag/output/*.go # gosub
+  - github.com/tscolari/plag/parser/*.go # gosub
+  - github.com/urfave/cli/*.go # gosub
+  - github.com/zorkian/go-datadog-api/*.go # gosub
+  - github.com/zorkian/go-datadog-api/vendor/github.com/cenkalti/backoff/*.go # gosub

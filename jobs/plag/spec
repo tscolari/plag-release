@@ -1,0 +1,27 @@
+---
+name: plag
+templates:
+  plag_ctl.erb : bin/plag_ctl
+  plag.erb: bin/plag
+
+packages:
+  - plag
+
+properties:
+  plag.datadog-api-key:
+    description: datadog api key
+  plag.datadog-app-key:
+    description: datadog application key
+  plag.metrics:
+    description: Array of metrics to watch for
+    example:
+      - message: my-app.function-0
+        datadog-api-key: key-123
+        datadog-app-key: app-123
+        datadog-metric-name: test.function-0
+        log-file: /var/vcap/sys/logs/garden/garden.stdout
+      - message: my-app.function-1
+        datadog-api-key: key-123
+        datadog-app-key: app-123
+        datadog-metric-name: test.function-1
+        log-file: /var/vcap/sys/logs/garden/garden.stdout

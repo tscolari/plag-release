@@ -1,0 +1,5 @@
+check process plag
+  with pidfile /var/vcap/sys/run/plag/plag.pid
+  start program "/var/vcap/jobs/plag/bin/plag_ctl start" with timeout 60 seconds
+  stop program "/var/vcap/jobs/plag/bin/plag_ctl stop" with timeout 60 seconds
+  group vcap

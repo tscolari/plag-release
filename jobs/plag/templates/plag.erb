@@ -1,0 +1,13 @@
+#!/bin/bash
+
+<% if_p("plag.metrics") do |metrics| %>
+<% Array(metrics).each do |metric| %>
+  tail -n 0 -f <%= metric["log-file"] %>  | /var/vcap/packages/plag/bin/plag \
+    --message <%= metric["message"] %> \
+    --datadog-api-key <%= p("plag.datadog-api-key") %> \
+    --datadog-app-key <%= p("plag.datadog-app-key") %> \
+    --datadog-metric-name <%= metric["datadog-metric-name"] || metric["message"] %> &
+<% end %>
+<% end %>
+
+read
