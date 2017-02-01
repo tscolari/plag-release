@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RUN_DIR=/var/vcap/sys/run/plag
-PID_FILE=$RUN_DIR/plag.pid
+PIDFILE=$RUN_DIR/plag.pid
 mkdir -p $RUN_DIR
 
 case $1 in
@@ -11,10 +11,10 @@ case $1 in
     exec chpst -u vcap:vcap /var/vcap/jobs/plag/bin/plag
     ;;
   stop)
-    kill -9 $PIDFILE
+    killall -9 plag
     ;;
   restart)
-    kill -9 $PIDFILE
+    killall -9 plag
     echo $$ > $PIDFILE
     exec chpst -u vcap:vcap /var/vcap/jobs/plag/bin/plag
     ;;

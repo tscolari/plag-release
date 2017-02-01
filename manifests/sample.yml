@@ -27,12 +27,12 @@ jobs:
       release: plag
     properties:
       plag:
+        datadog-api-key: XXXX
+        datadog-app-key: YYYY
         metrics:
-          - message:
-            datadog-api-key:
-            datadog-app-key:
-            datadog-metric-name:
-            log-file:
+        - message: some.log.message
+          datadog-metric-name: some.metric.name
+          log-file: /var/vcap/sys/log/some/log.file
 
 update:
   canaries: 1
