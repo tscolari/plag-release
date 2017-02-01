@@ -1,0 +1,42 @@
+- message: guardian.stream-in
+  datadog-metric-name: grootfs-perf-test.garden.stream-in
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.create
+  datadog-metric-name: grootfs-perf-test.garden.create
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.create.image-plugin-create
+  datadog-metric-name: grootfs-perf-test.garden.image-plugin
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.create.containerizer-create.depot-create
+  datadog-metric-name: grootfs-perf-test.garden.depot-create
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+
+- message: guardian.create.image-plugin-create.grootfs.create.groot-creating.image-pulling
+  datadog-metric-name: grootfs-perf-test.grootfs.image-pulling
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.create.image-plugin-create.grootfs.create.groot-creating.image-pulling.layers-digest
+  datadog-metric-name: grootfs-perf-test.grootfs.local-layers-digest
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.create.image-plugin-create.grootfs.create.groot-creating.image-pulling.stream-blob
+  datadog-metric-name: grootfs-perf-test.grootfs.local-stream-blob
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.create.image-plugin-create.grootfs.create.groot-creating.making-image
+  datadog-metric-name: grootfs-perf-test.grootfs.making-image
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+
+- message: guardian.image-plugin-metrics.grootfs.stats.groot-stats
+  datadog-metric-name: grootfs-perf-test.grootfs.stats
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+
+- message: guardian.destroy
+  datadog-metric-name: grootfs-perf-test.garden.destroy
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.image-plugin-destroy.grootfs.delete.groot-deleting
+  datadog-metric-name: grootfs-perf-test.grootfs.delete
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.image-plugin-destroy.grootfs.delete.groot-deleting.deleting-image
+  datadog-metric-name: grootfs-perf-test.grootfs.delete.deleting-image
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
+- message: guardian.image-plugin-destroy.grootfs.delete.groot-deleting.deleting-image.btrfs-destroying
+  datadog-metric-name: grootfs-perf-test.grootfs.delete.btrfs-destroy
+  log-file: "/var/vcap/sys/log/garden/garden.stdout.log"
