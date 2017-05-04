@@ -6,8 +6,8 @@ Get metrics from your log files and push them to datadog
 
 ### Assumptions:
 
-* The thing you want to get metrics from writing log files using the lager library/format (https://github.com/cloudfoundry/lager)
-* The thing you want to get metrics from logs using `start` and `end` (or similar) for their sessions. e.g:
+* The thing you want to get metrics from is writing log files using the lager library/format (https://github.com/cloudfoundry/lager)
+* The thing you want to get metrics from logs is using `start` and `end` (or similar) for their sessions. e.g:
 
   ```
     logger := lager.NewLogger("my-app")
@@ -19,8 +19,7 @@ Get metrics from your log files and push them to datadog
     }
   ```
 
-  In this case you're going to get metrics from `my-app.the-thing`. 
-  Valid `start` `end` combinations -> https://github.com/tscolari/plag/blob/master/parser/parser.go#L13-L14
+  Valid `start` & `end` combinations -> https://github.com/tscolari/plag/blob/master/parser/parser.go#L13-L14
 
 
 ### Usage:
